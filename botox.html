@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>W3.CSS Template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Lato", sans-serif;
+            }
+
+            body,
+            html {
+                height: 100%;
+                color: #777;
+                line-height: 1.8;
+            }
+
+            /* Create a Parallax Effect */
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* First image (Logo. Full height) */
+            .bgimg-1 {
+                background-image: url('img/botox.jpg');
+                min-height: 100%;
+            }
+
+            /* Second image (Portfolio) */
+            .bgimg-2 {
+                background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+                min-height: 400px;
+            }
+
+            /* Third image (Contact) */
+            .bgimg-3 {
+                background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+                min-height: 400px;
+            }
+
+            .w3-wide {
+                letter-spacing: 10px;
+            }
+
+            .w3-hover-opacity {
+                cursor: pointer;
+            }
+            
+            
+
+            /* Turn off parallax scrolling for tablets and phones */
+            @media only screen and (max-device-width: 1600px) {
+
+                .bgimg-1,
+                .bgimg-2,
+                .bgimg-3 {
+                    background-attachment: scroll;
+                    min-height: 400px;
+                }
+            }
+
+        </style>
+    </head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-center">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button w3-text-black">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-text-black"><i class="fa fa-user"></i> PHILOSOPHY</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-text-black"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-text-black"><i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-text-black">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">PHILOSOPHY</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">TREATMENTS</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+	<div class="bgimg-1 w3-display-container w3-opacity" id="home">
+		<div class="w3-display-middle" style="white-space:nowrap;">
+			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Dr Alison Cousins</span>
+			<!-- Smaller description text below -->
+			<div class="w3-center w3-padding-small w3-black w3-medium w3-animate-opacity">
+				<span>Custom Beauty, Timeless Radiance</span>
+			</div>
+		</div>
+	</div>
+
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-large" id="about">
+        <h3 class="w3-center w3-wide">PHILOSOPHY</h3>
+        <p class="w3-large w3-justify">At the Dr. Alison Cousins Clinic, I specialise in crafting developing personalized treatment plans focused on aesthetic improvement, carefully designed to align with your unique aspirations. I am committed to delivering tangible results, driven by the fundamental aim of assisting you in achieving and embracing the best version of yourself.</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                
+                <img src="img/alison.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                    width="500" height="333">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p class="w3-large w3-justify">My passion for facial rejuvenation, focusing on non-surgical and minimally invasive approaches, is deeply rooted in my thorough understanding of the physiological aspects of aging. This knowledge allows me to appreciate the subtle nuances of how the skin and underlying structures change over time, enabling me to tailor my approach to each individual's unique needs.</p>
+
+				<p class="w3-large w3-justify">For every client, I carefully craft a personalized treatment plan. I select specific products and techniques based on the client's skin type, facial structure, and the specific areas of concern, ensuring that the results are not only effective but also appear natural and harmonious with their overall facial aesthetics. </p>
+            </div>
+        </div>
+        
+<!-- QUALIFICATIONS -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center w3-wide">QUALIFICATIONS</h3>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+            <img src="img/gdc.jpg" style="width:100%" class="w3-hover-opacity"
+                alt="The mist over the mountains">
+            <p>General Dental Council</p>
+        </div>
+
+        <div class="w3-col m3">
+            <img src="img/kcl.png" style="width:100%" class="w3-hover-opacity"
+                alt="Coffee beans">
+            <p>XXX Msc (hons) Kings College London</p>
+        </div>
+
+        <div class="w3-col m3">
+            <img src="img/gdc.jpg" style="width:100%" class="w3-hover-opacity"
+                alt="Bear closeup">
+            <p>Dental qualification</p>
+        </div>
+
+        <div class="w3-col m3">
+            <img src="img/kcl.png" style="width:100%" class="w3-hover-opacity"
+                alt="Quiet ocean">
+            <p>Insuranced something</p>
+        </div>
+    </div>
+
+ 
+
+    </div>
+</div>
+
+
+
+
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center w3-wide">MY WORK</h3>
+
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="img/portfolio1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="The mist over the mountains">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="img/portfolio2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Coffee beans">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="img/portfolio3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Bear closeup">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="img/portfolio1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Quiet ocean">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+             <div class="w3-col m3">
+                <img src="img/portfolio1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Quiet ocean">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="img/portfolio1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Quiet ocean">
+            </div>
+
+          <div class="w3-col m3">
+                <img src="img/portfolio1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Quiet ocean">
+            </div>
+
+           <div class="w3-col m3">
+                <img src="img/portfolio1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Quiet ocean">
+            </div>
+            
+            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center w3-wide">OUR CLINIC</h3>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> London, UK<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00
+                    151515<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                    mail@mail.com<br>
+                </div>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-small">Copyright 2023 Alison Cousins</p>
+    <a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start your journey now</a>
+    <!-- Footer end. -->
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
