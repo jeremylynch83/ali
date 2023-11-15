@@ -61,8 +61,8 @@
                 cursor: pointer;
             }
             
-            
 
+				
             /* Turn off parallax scrolling for tablets and phones */
             @media only screen and (max-device-width: 1600px) {
 
@@ -80,7 +80,6 @@
                 href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#home" class="w3-bar-item w3-button w3-text-black">HOME</a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-text-black"><i class="fa fa-user"></i> PHILOSOPHY</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-text-black"><i class="fa fa-th"></i> PORTFOLIO</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-text-black"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -89,26 +88,25 @@
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-text-black">
             <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">PHILOSOPHY</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">TREATMENTS</a>
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
         </div>
     </div>
 
     <!-- First Parallax Image with Logo Text -->
 	<div class="bgimg-1 w3-display-container w3-opacity " id="home">
-		<div class="w3-display-middle w3-black" style="white-space:nowrap;">
+		<div class="w3-display-middle w3-opacity w3-black" style="white-space:nowrap;">
 			<span class="w3-center w3-padding-large  w3-xlarge w3-wide w3-animate-opacity">DR ALISON COUSINS</span>
 			<!-- Smaller description text below -->
 			<div class="w3-center w3-padding-small  w3-medium w3-animate-opacity">
-				<span>BESPOKE BEAUTY</span>
+				<span>TAILORED AESTHETIC TREATMENTS</span>
 			</div>
 		</div>
 	</div>
 
 
     <!-- Container (About Section) -->
-    <div class="w3-content w3-container w3-padding-large" id="about">
+    <div class="w3-content w3-container w3-padding-large " id="about">
         <h3 class="w3-center w3-wide">PHILOSOPHY</h3>
         <p class="w3-large w3-justify">At the Dr. Alison Cousins Clinic, I specialise in crafting developing personalized treatment plans focused on aesthetic improvement, carefully designed to align with your unique aspirations. I am committed to delivering tangible results, driven by the fundamental aim of assisting you in achieving and embracing the best version of yourself.</p>
         <div class="w3-row">
@@ -132,28 +130,28 @@
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
-        <div class="w3-col m3">
-            <img src="img/gdc.jpg" style="width:100%" class="w3-hover-opacity"
+        <div class="w3-col  s3 m3">
+            <img src="img/gdc.png" style="width:50%" class="w3-hover-opacity"
                 alt="The mist over the mountains">
             <p>General Dental Council</p>
         </div>
 
-        <div class="w3-col m3">
-            <img src="img/kcl.png" style="width:100%" class="w3-hover-opacity"
+        <div class="w3-col  s3 m3">
+            <img src="img/kcl.png" style="width:50%" class="w3-hover-opacity"
                 alt="Coffee beans">
-            <p>XXX Msc (hons) Kings College London</p>
+            <p>Bachelor of Dental Surgery (Hons)</p>
         </div>
 
-        <div class="w3-col m3">
-            <img src="img/gdc.jpg" style="width:100%" class="w3-hover-opacity"
+        <div class="w3-col  s3 m3">
+            <img src="img/imperial.png" style="width:50%" class="w3-hover-opacity"
                 alt="Bear closeup">
-            <p>Dental qualification</p>
+            <p>MSc Research Translational Medicine (Distinction)</p>
         </div>
 
-        <div class="w3-col m3">
-            <img src="img/kcl.png" style="width:100%" class="w3-hover-opacity"
+        <div class="w3-col  s3 m3">
+            <img src="img/bristol.png" style="width:50%" class="w3-hover-opacity"
                 alt="Quiet ocean">
-            <p>Insuranced something</p>
+            <p>Bsc Physiological Science (Hons)</p>
         </div>
     </div>
 
@@ -321,6 +319,11 @@
                 x.className = x.className.replace(" w3-show", "");
             }
         }
+        
+        
+        
+  
+
     </script>
 
 </body>
