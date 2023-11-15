@@ -66,10 +66,16 @@
 				
             /* Turn off parallax scrolling for tablets and phones */
             @media only screen and (max-device-width: 1600px) {
-			.bgimg-1 {
-				background-attachment: scroll; /* if you want to disable fixed background on small devices */
-				background-size: contain; /* or a specific size like 100% auto */
-			}
+				.bgimg-1 {
+					background-size: contain; /* or a specific size like 100% auto */
+				}
+				
+				.w3-xlarge {
+					font-size:12px!important; /* smaller padding for small screens */
+				}
+				.w3-medium {
+					font-size:8px!important; /* smaller padding for small screens */
+				}
                 
             }
 
