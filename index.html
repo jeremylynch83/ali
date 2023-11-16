@@ -17,6 +17,11 @@
             h6 {
                 font-family: "Lato", sans-serif;
             }
+            
+            h3 {
+				text-align:center!important;
+				letter-spacing:4px;
+			}
 
             body,
             html {
@@ -62,9 +67,6 @@
                 cursor: pointer;
             }
             
-
-				
-            /* Turn off parallax scrolling for tablets and phones */
             @media only screen and (max-device-width: 1600px) {
 				.bgimg-1 {
 					background-attachment: scroll;	
@@ -76,7 +78,12 @@
 				.w3-medium {
 					font-size:9px!important; /* smaller padding for small screens */
 				}
-                
+			h3 {
+				letter-spacing:2px!important;
+			}
+			
+				.w3-center {
+					text-align:right!important;                
             }
 
         </style>
@@ -96,9 +103,10 @@
 	
 
     <!-- Navbar (sit on top) -->
-    <div class="w3-top w3-center ">
-        <div class="w3-bar" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+    <div class="w3-top w3-center w3-text-black">
+		
+		<div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large "
                 href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
@@ -108,7 +116,7 @@
         </div>
 
         <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-text-black">
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-opacity w3-hide-medium ">
             <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">PHILOSOPHY</a>
             <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
             <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
@@ -120,7 +128,7 @@
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-large " id="about">
-        <h3 class="w3-center w3-wide">PHILOSOPHY</h3>
+        <h3 >PHILOSOPHY</h3>
         <p class="w3-large w3-justify">Dr. Alison Cousins has created a clinic that specialises in crafting personalised treatment plans focused on aesthetic improvement, carefully designed to align with each individual's unique aspirations. She is committed to delivering tangible results, driven by the fundamental aim of assisting her patients in achieving and embracing the best version of themselves. She selects specific products and techniques based on the client's skin type, facial structure, and the specific areas of concern, ensuring that the results are not only effective but also appear natural and harmonious with their overall facial aesthetics.</p>
 
             
@@ -133,25 +141,28 @@
 <!-- QUALIFICATIONS -->
 <div class=" w3-container" style="background-color:rgb(246, 245, 244)" id="portfolio">
 	
-	<div class=" w3-container">
-	<h3 class="w3-center w3-wide">DR COUSINS</h3>
+<div class="w3-container">
+    <h3 >DR COUSINS</h3>
 
-	<div class="w3-col m6 w3-center ">
-		<img src="img/alison.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
-                    width="300" height="333">
-     </div>
+    <div class="w3-row" style="display: flex; align-items: center;">
+        <div class="w3-col m6 w3-center">
+            <img src="img/alison.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300" height="333">
+        </div>
 
-            <!-- Hide this text on small devices -->
-            <!--<div class="w3-col m6 w3-hide-small w3-padding-large">-->
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <div>
                 <p class="w3-large w3-justify">Dr Cousin's has trained extensively and achieved multiple qualifications in medicine, research, and dentistry. Her expertise in facial rejuvenation, focusing on non-surgical and minimally invasive approaches, is deeply rooted in her thorough understanding of the physiological aspects of aging. This knowledge allows her to appreciate the subtle nuances of how the skin and underlying structures change over time, enabling her to tailor her approach to each individual's unique needs.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
-				<!--<p class="w3-large w3-justify">For every client, Dr Cousins carefully crafts a personalized treatment plan. She selects specific products and techniques based on the client's skin type, facial structure, and the specific areas of concern, ensuring that the results are not only effective but also appear natural and harmonious with their overall facial aesthetics. </p>-->
- 	</div>
+
  	
  	
 	<div class=" w3-container">
 	
-    <h3 class="w3-center w3-wide" style="margin-top:32px;">QUALIFICATIONS</h3>
+    <h3  style="margin-top:32px;">QUALIFICATIONS</h3>
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center w3-tiny" style="text-transform: uppercase; margin-top:0px; margin-bottom:32px">
@@ -196,8 +207,6 @@
 
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 class="w3-center w3-wide">MY WORK</h3>
-
 
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
         <div class="w3-row-padding w3-center">
@@ -266,7 +275,7 @@
 
     <!-- Container (Contact Section) -->
     <div class="w3-content w3-container w3-padding-64" id="contact">
-        <h3 class="w3-center w3-wide">OUR CLINIC</h3>
+        <h3 >OUR CLINIC</h3>
 
         <div class="w3-row w3-padding-32 w3-section">
             <div class="w3-col m4 w3-container">
