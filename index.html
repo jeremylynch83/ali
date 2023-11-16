@@ -71,10 +71,7 @@
             .w3-hover-opacity {
                 cursor: pointer;
             }
-            
-            .w3-mobile-center {
-					text-align:center!important;                
-            }
+    
             
             @media only screen and (max-device-width: 1600px) {
 				.bgimg-1 {
@@ -119,7 +116,8 @@
 	
 
     <!-- Navbar (sit on top) -->
-    <div class="w3-top w3-mobile-center w3-text-black">
+
+    <div class=" w3-top w3-center w3-mobile-center w3-text-black">
 		
 		<div class="w3-bar" id="myNavbar">
             <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large "
@@ -138,7 +136,7 @@
             <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
         </div>
     </div>
-
+</div>
 
 
 
@@ -223,66 +221,54 @@
         </div>
     </div>
 
-    <!-- Container (Portfolio Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
-
-        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-        <div class="w3-row-padding w3-center">
-            <div class="w3-col m3">
-                <img src="img/portfolio1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="The mist over the mountains">
+<div class="" id="portfolio">
+    <!-- Responsive Grid. Two columns on desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-col m6 s6 w3-display-container">
+        <a href="link-to-page-3.html">
+            <img src="img/portfolio3.jpg" style="width:100%" class="w3-hover-opacity w3-greyscale-max " alt="Quiet ocean">
+            <div class="w3-display-middle w3-large w3-container w3-padding w3-text-white ">
+                <div style="text-align: center;">Botox Injections</div>
+                <div style="text-align: center; font-size: 10px;">More explanation here</div>
             </div>
-
-            <div class="w3-col m3">
-                <img src="img/portfolio2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Coffee beans">
+        </a>
+    </div>
+    <div class="w3-col m6 s6 w3-display-container">
+        <a href="link-to-page-3.html">
+            <img src="img/portfolio3.jpg" style="width:100%" class="w3-hover-opacity w3-greyscale-max " alt="Quiet ocean">
+            <div class="w3-display-middle w3-large w3-container w3-padding w3-text-white ">
+                <div style="text-align: center;">Botox Injections</div>
+                <div style="text-align: center; font-size: 10px;">More explanation here</div>
             </div>
-
-            <div class="w3-col m3">
-                <img src="img/portfolio3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Bear closeup">
+        </a>
+    </div>
+    
+        <div class="w3-col m6 s6 w3-display-container">
+        <a href="link-to-page-3.html">
+            <img src="img/portfolio3.jpg" style="width:100%" class="w3-hover-opacity w3-greyscale-max " alt="Quiet ocean">
+            <div class="w3-display-middle w3-large w3-container w3-padding w3-text-white ">
+                <div style="text-align: center;">Botox Injections</div>
+                <div style="text-align: center; font-size: 10px;">More explanation here</div>
             </div>
-
-            <div class="w3-col m3">
-                <img src="img/portfolio1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Quiet ocean">
+        </a>
+    </div>
+    
+    
+            <div class="w3-col m6 s6 w3-display-container">
+        <a href="link-to-page-3.html">
+            <img src="img/portfolio3.jpg" style="width:100%" class="w3-hover-opacity w3-greyscale-max " alt="Quiet ocean">
+            <div class="w3-display-middle w3-large w3-container w3-padding w3-text-white ">
+                <div style="text-align: center;">Botox Injections</div>
+                <div style="text-align: center; font-size: 10px;">More explanation here</div>
             </div>
-        </div>
-
-        <div class="w3-row-padding w3-center w3-section">
-             <div class="w3-col m3">
-                <img src="img/portfolio1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Quiet ocean">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="img/portfolio1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Quiet ocean">
-            </div>
-
-          <div class="w3-col m3">
-                <img src="img/portfolio1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Quiet ocean">
-            </div>
-
-           <div class="w3-col m3">
-                <img src="img/portfolio1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Quiet ocean">
-            </div>
-            
-            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-        </div>
+        </a>
     </div>
 
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
-                class="fa fa-remove"></i></span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image">
-            <p id="caption" class="w3-opacity w3-large"></p>
-        </div>
+    <div class="w3-center" style="margin-top:64px">
+        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:32px; margin-bottom:32px">FULL LIST</button>
     </div>
+</div>
+
+
 
     <!-- Third Parallax Image with Portfolio Text -->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
@@ -326,7 +312,7 @@
     </div>
 
     <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <footer class="w3-center w3-black w3-padding-64 ">
         
         <div class="w3-xlarge w3-section">
             <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -335,19 +321,13 @@
             <i class="fa fa-pinterest-p w3-hover-opacity"></i>
             <i class="fa fa-twitter w3-hover-opacity"></i>
             <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-small">Copyright 2023 Alison Cousins</p>
-    <a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start your journey now</a>
+    <p class="w3-small w3-center">Copyright 2023 Alison Cousins</p>
+        <p class="w3-small w3-center">Start your journey now</p>
+
     <!-- Footer end. -->
     </footer>
 
     <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
 
         // Change style of navbar on scroll
         window.onscroll = function () { myFunction() };
