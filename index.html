@@ -74,9 +74,7 @@
             
             .your-video-class {
 				position: absolute;
-				right: 0;
 				bottom: 0;
-				width: 100%; 
 				height: 100%;
 				object-fit: cover; /* This ensures the video covers the div without distorting */
 				object-position: center; /* Adjust this as needed */
@@ -115,8 +113,8 @@
 	
 	    <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity" id="home">
-    <video autoplay loop muted class="your-video-class">
-        <source height="400px" src="first_video.mp4" type="video/mp4">
+    <video autoplay loop muted playsinline class="your-video-class">
+        <source  src="first_video.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
     <div class="w3-display-middle w3-opacity w3-black" style="white-space:nowrap;">
