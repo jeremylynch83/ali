@@ -87,7 +87,7 @@
 
     
             
-            /*@media only screen and (max-device-width: 1600px) {
+            @media only screen and (max-device-width: 1600px) {
 				.bgimg-1 {
        				}
 				
@@ -98,18 +98,15 @@
 					font-size:9px!important; /* smaller padding for small screens */
 				}
 				h3 {
-					letter-spacing:2px!important;
+					letter-spacing:3px!important;
 				}
-				
-				.w3-mobile-center {
-						text-align:right!important;                
-				}
+							
 					.w3-row {
 				flex-direction: column!important;
 				}
 				p {
 				font-size:14px;
-				}*/
+				}
 
         </style>
     </head>
@@ -134,7 +131,7 @@
 
     <!-- Navbar (sit on top) -->
 
-    <div class=" w3-top w3-center w3-mobile-center w3-text-black">
+    <div class=" w3-top w3-center  w3-text-black">
 		
 		<div class="w3-bar" id="myNavbar">
             <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large "
@@ -147,7 +144,7 @@
         </div>
 
         <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-opacity w3-hide-medium ">
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-opacity w3-hide-medium "> 
             <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">PHILOSOPHY</a>
             <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
             <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
@@ -218,8 +215,6 @@
     </div>
 
 
-
-
         <div class="w3-col s6 m3 ">
         <img src="img/gdc.png" style="width:80%" class="w3-hover-opacity" alt="The mist over the mountains">
         <div>General Dental Council</div>
@@ -244,48 +239,49 @@
 
 <div class="" id="portfolio">
     <!-- Responsive Grid. Two columns on desktops. Will stack on mobile devices/small screens (100% width) -->
-    <div class="w3-col m6 s6 w3-display-container">
-        <a href="link-to-page-3.html">
-            <img src="img/portfolio3.jpg" style="width:100%" class="w3-hover-opacity w3-greyscale-max " alt="Quiet ocean">
-            <div class="w3-display-middle w3-large w3-container w3-padding w3-text-white ">
-                <div style="text-align: center;">Botox Injections</div>
-                <div style="text-align: center; font-size: 10px;">More explanation here</div>
-            </div>
-        </a>
-    </div>
-    <div class="w3-col m6 s6 w3-display-container">
-        <a href="link-to-page-3.html">
-            <img src="img/portfolio3.jpg" style="width:100%" class="w3-hover-opacity w3-greyscale-max " alt="Quiet ocean">
-            <div class="w3-display-middle w3-large w3-container w3-padding w3-text-white ">
-                <div style="text-align: center;">Botox Injections</div>
-                <div style="text-align: center; font-size: 10px;">More explanation here</div>
-            </div>
-        </a>
-    </div>
-    
-        <div class="w3-col m6 s6 w3-display-container">
-        <a href="link-to-page-3.html">
-            <img src="img/portfolio3.jpg" style="width:100%" class="w3-hover-opacity w3-greyscale-max " alt="Quiet ocean">
-            <div class="w3-display-middle w3-large w3-container w3-padding w3-text-white ">
-                <div style="text-align: center;">Botox Injections</div>
-                <div style="text-align: center; font-size: 10px;">More explanation here</div>
-            </div>
-        </a>
-    </div>
-    
-    
-            <div class="w3-col m6 s6 w3-display-container">
-        <a href="link-to-page-3.html">
-            <img src="img/portfolio3.jpg" style="width:100%" class="w3-hover-opacity w3-greyscale-max " alt="Quiet ocean">
-            <div class="w3-display-middle w3-large w3-container w3-padding w3-text-white ">
-                <div style="text-align: center;">Botox Injections</div>
-                <div style="text-align: center; font-size: 10px;">More explanation here</div>
-            </div>
-        </a>
-    </div>
+<div class="w3-col m6 s6 w3-display-container">
+    <a href="link-to-page-3.html">
+        <img src="img/portfolio3.jpg" style="width:100%" class="w3-hover-opacity w3-greyscale-max " alt="Quiet ocean">
+        <div class="w3-display-middle w3-large w3-container w3-padding w3-text-white ">
+            <div style="text-align: center;">Forehead lines</div>
+            <div style="text-align: center; font-size: 10px;">Forehead Botox</div>
+        </div>
+    </a>
+</div>
+
+<div class="w3-col m6 s6 w3-display-container">
+    <a href="link-to-page-3.html">
+        <img src="img/portfolio3.jpg" style="width:100%" class="w3-hover-opacity w3-greyscale-max " alt="Quiet ocean">
+        <div class="w3-display-middle w3-large w3-container w3-padding w3-text-white ">
+            <div style="text-align: center;">Frown lines</div>
+            <div style="text-align: center; font-size: 10px;">Glabella Botox</div>
+        </div>
+    </a>
+</div>
+
+<div class="w3-col m6 s6 w3-display-container">
+    <a href="link-to-page-3.html">
+        <img src="img/portfolio3.jpg" style="width:100%" class="w3-hover-opacity w3-greyscale-max " alt="Quiet ocean">
+        <div class="w3-display-middle w3-large w3-container w3-padding w3-text-white ">
+            <div style="text-align: center;">Eye corner wrinkles</div>
+            <div style="text-align: center; font-size: 10px;">Crows Feet Botox</div>
+        </div>
+    </a>
+</div>
+
+<div class="w3-col m6 s6 w3-display-container">
+    <a href="link-to-page-3.html">
+        <img src="img/portfolio3.jpg" style="width:100%" class="w3-hover-opacity w3-greyscale-max " alt="Quiet ocean">
+        <div class="w3-display-middle w3-large w3-container w3-padding w3-text-white ">
+            <div style="text-align: center;">Jaw tension</div>
+            <div style="text-align: center; font-size: 10px;">Masseter Botox</div>
+        </div>
+    </a>
+</div>
+
 
     <div class="w3-center" style="margin-top:64px">
-        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:32px; margin-bottom:32px">FULL LIST</button>
+        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:32px; margin-bottom:32px">LIST ALL TREATMENTS</button>
     </div>
 </div>
 
