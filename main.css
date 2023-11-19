@@ -97,6 +97,10 @@
 
 	.fadeOut { opacity: 0; }
 	.fadeIn { opacity: 1; }
+	
+	    select option {
+        padding: 5px;
+    }
             
 		@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
 					.bgimg-1 {
