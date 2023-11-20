@@ -4,6 +4,10 @@
   <meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.6.0">
 </head>
 <body>
+
+
+    
+    
 	
     <!-- 
     <div class="w3-display-container w3-center" >
@@ -19,15 +23,15 @@
             TO BOOK AN IN-PERSON CONSULTATION, ENTER YOUR DETAILS BELOW, AND OUR PRACTICE MANAGEMENT TEAM WILL CONTACT YOU TO SCHEDULE THE APPOINTMENT.
         </p>
 
-        <form id="appointmentForm" action="https://www.radiologytemplates.org/send_email" method="post" class="w3-center" style="margin-top:32px; font-size: 12px">
+        <form id="appointmentForm" action="https://www.radiologytemplates.org/send_email_ali" method="post" class="w3-center" style="margin-top:32px; font-size: 12px">
             <div class="form-group" style="margin-bottom: 5px; ">
-                <input type="text" class="w3-input " name="contact-name" placeholder="Your name" required style="background-color: rgba(255, 255, 255, 0.8);">
+                <input type="text" class="w3-input " name="contact-name" placeholder="Your name" required style="background-color: rgba(255, 255, 255, 0.8); border-radius: 0; ">
             </div>
             <div class="form-group" style="margin-bottom: 5px;">
-                <input type="tel" class="w3-input " name="contact-tel" placeholder="Your telephone number" required style="background-color: rgba(255, 255, 255, 0.8);">
+                <input type="tel" class="w3-input " name="contact-tel" placeholder="Your telephone number" required style="background-color: rgba(255, 255, 255, 0.8); border-radius: 0; ">
             </div>
             <div class="form-group" style="margin-bottom: 5px;">
-                <input type="email" class="w3-input " name="contact-email" placeholder="Your email" required style="background-color: rgba(255, 255, 255, 0.8);">
+                <input type="email" class="w3-input " name="contact-email" placeholder="Your email" required style="background-color: rgba(255, 255, 255, 0.8); border-radius: 0; ">
             </div>
             <div class="form-group" style="margin-bottom: 5px;">
                 <select class="w3-select" name="contact-hear-about" required style=" background-color: rgba(255, 255, 255, 0.8); border-radius: 0; -webkit-appearance: none; height: 36px;">
@@ -40,7 +44,7 @@
                     <option value="referral">Referral from another doctor</option>
                 </select>
             </div>
-            <button type="submit" class="w3-button w3-padding-large w3-light-grey" style="margin-top:32px">Book consultation</button>
+            <button id="submitBtn" type="submit" class="w3-button w3-padding-large w3-light-grey" style="margin-top:32px">Book consultation</button>
         </form>
     </div>
 </div>
@@ -66,6 +70,33 @@
     </div>
 </footer>
 
-  
+    <script>
+    document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        /*var formData = new FormData(this);
+
+        fetch('https://www.radiologytemplates.org/send_email', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.text();
+            } else {
+                throw new Error('Server returned an error response');
+            }
+        })
+        .then(responseText => {
+            // Replace the form with the thank you message
+            document.getElementById('appointmentForm').innerHTML = '<div class="w3-text-white" style="text-align:center;"><h3>Thank you, your request is submitted</h3></div>';
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        }); */
+        
+    });
+    </script>
+
 </body>
 </html>
