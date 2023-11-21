@@ -24,7 +24,11 @@
             TO BOOK AN IN-PERSON CONSULTATION, ENTER YOUR DETAILS BELOW, AND OUR PRACTICE MANAGEMENT TEAM WILL CONTACT YOU TO SCHEDULE THE APPOINTMENT.
         </p>
 
-        <form id="appointmentForm" action="https://www.radiologytemplates.org/send_email_ali" method="post" class="w3-center" style="margin-top:32px; font-size: 12px">
+        <!--<form id="appointmentForm" action="https://www.radiologytemplates.org/send_email_ali" method="post" class="w3-center" style="margin-top:32px; font-size: 12px">-->
+        
+        <form id="appointmentForm" 
+        class="w3-center" style="margin-top:32px; font-size: 12px">
+        
             <div class="form-group" style="margin-bottom: 5px; ">
                 <input type="text" class="w3-input " name="contact-name" placeholder="Your name" required style="background-color: rgba(255, 255, 255, 0.8); border-radius: 0; ">
             </div>
@@ -45,7 +49,36 @@
                     <option value="referral">Referral from another doctor</option>
                 </select>
             </div>
-            <button id="submitBtn" type="submit" class="w3-button w3-padding-large w3-light-grey" style="margin-top:32px">BOOK CONSULTATION</button>
+            <button id="submitBtn" class="w3-button w3-padding-large w3-light-grey" style="margin-top:32px" onclick="
+        
+            event.preventDefault();
+            var form = document.getElementById('appointmentForm');
+
+            var formData = new FormData(form);
+            
+           
+            fetch('https://www.radiologytemplates.org/send_email_ali', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.text();
+            } else {
+                throw new Error('Server returned an error response');
+            }
+        })
+        .then(responseText => {
+            // Replace the form with the thank you message
+            document.getElementById('appointmentForm').innerHTML = '<div ><h3>Thank you, your request is submitted</h3></div>';
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        }); 
+
+        " 
+            
+            ">BOOK CONSULTATION</button>
         </form>
     </div>
 </div>
@@ -72,31 +105,7 @@
 </footer>
 
     <script>
-    document.getElementById('appointmentForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
 
-        /*var formData = new FormData(this);
-
-        fetch('https://www.radiologytemplates.org/send_email', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            if (response.ok) {
-                return response.text();
-            } else {
-                throw new Error('Server returned an error response');
-            }
-        })
-        .then(responseText => {
-            // Replace the form with the thank you message
-            document.getElementById('appointmentForm').innerHTML = '<div class="w3-text-white" style="text-align:center;"><h3>Thank you, your request is submitted</h3></div>';
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        }); */
-        
-    });
     </script>
 
 </body>

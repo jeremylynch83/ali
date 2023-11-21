@@ -1,5 +1,6 @@
 
 
+		
 		w3.includeHTML();
 
         // Change style of navbar on scroll
@@ -46,3 +47,9 @@
 
 		const fadeElms = document.querySelectorAll('.fade');
 		fadeElms.forEach(el => observer.observe(el));
+		
+		
+
+
+
+
