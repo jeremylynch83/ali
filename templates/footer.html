@@ -55,26 +55,32 @@
             var form = document.getElementById('appointmentForm');
 
             var formData = new FormData(form);
-            
+            if (form.checkValidity()) {
            
-            fetch('https://www.radiologytemplates.org/send_email_ali', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            if (response.ok) {
-                return response.text();
-            } else {
-                throw new Error('Server returned an error response');
-            }
-        })
-        .then(responseText => {
-            // Replace the form with the thank you message
-            document.getElementById('appointmentForm').innerHTML = '<div ><h3>Thank you, your request is submitted</h3></div>';
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        }); 
+                fetch('https://www.radiologytemplates.org/send_email_ali', {
+                method: 'POST',
+                body: formData
+                })
+                .then(response => {
+                    if (response.ok) {
+                        return response.text();
+                    } else {
+                        throw new Error('Server returned an error response');
+                    }
+                })
+                .then(responseText => {
+                    // Replace the form with the thank you message
+                    document.getElementById('appointmentForm').innerHTML = '<div ><h3>Thank you, your request is submitted</h3></div>';
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                }); 
+             }
+             else
+             {
+             alert('Please fill in all the form before submitting')
+             }
+
 
         " 
             
