@@ -19,9 +19,12 @@
 				text-align:center!important;
 				letter-spacing:2px;
 				padding-top: 32px;
-				font-size:35px;
+				font-size:30px;				
+			}
+			
+			h4 {
+				text-align:center!important;
 
-				
 			}
 
             body,
@@ -101,6 +104,11 @@
 			padding: 20px;
 		}
 		
+		.picture-main {
+			margin-left: 50px; 
+			margin-right: 50px;
+		}
+		
 		.picture-title {
 			text-align: center;
 			font-size: 25px;
@@ -150,9 +158,14 @@
 				font-size:8px; letter-spacing:2px
 				}
 				
+						.picture-main {
+			margin-left: 30px; 
+			margin-right: 30px;
+		}
+				
 						.picture-title {
 			text-align: center;
-			font-size: 35px;
+			font-size: 25px;
 			font-family: 'Playfair Display', serif;
 			text-transform: uppercase;
 		}
