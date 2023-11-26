@@ -3,7 +3,7 @@ import re
 import subprocess
 
 def parse_headings_and_group(file_path):
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf-8-sig') as file:
         content = file.read()
 
     lines = content.splitlines()
@@ -14,7 +14,7 @@ def parse_headings_and_group(file_path):
     heading_pattern = re.compile(r'^(#+)\s+(.*?)\s*\{(\d+)\}$')
 
     for line in lines:
-        match = heading_pattern.match(line)
+        match = heading_pattern.match(line.strip())
         if match:
             level, text, group = match.groups()
             link = text.replace(' ', '_') + '.html'
@@ -35,7 +35,7 @@ def create_md_content_from_headings(file_path, grouped_headings, section_links):
         print(f"File {file_path} does not exist.")
         return []
 
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf-8-sig') as file:
         content = file.read()
 
     lines = content.splitlines()
@@ -43,18 +43,18 @@ def create_md_content_from_headings(file_path, grouped_headings, section_links):
     current_text = []
     sections = []
 
+
     for line in lines:
-        if line.startswith('#'):
+        if line.startswith('# '):
+            print(line)
+            
             if current_heading is not None:
                 sections.append((current_heading, '\n\n'.join(current_text)))
 
             current_heading_text = re.sub(r'\{.*\}$', '', line.strip())
+           
             current_heading_filename = current_heading_text.strip().lstrip('#').strip().replace(' ', '_') + '.html'
-
-            current_heading_text = "# " + re.sub(r'\{.*\}$', '', line.strip()).strip().lstrip('#').strip() 
-
-            #print(search_text)
-            
+            current_heading_text = "# " + re.sub(r'\{.*\}$', '', line.strip()).strip().lstrip('#').strip()         
 
             # Add YAML metadata if this section belongs to a group
             if current_heading_text in section_links:
@@ -83,8 +83,8 @@ def convert_md_to_html(md_content, html_filename, template_path):
 
 def main():
     template_path = "templates/standard.html"
-    grouped_headings, section_links = parse_headings_and_group('master.txt')
-    md_sections = create_md_content_from_headings('master.txt', grouped_headings, section_links)
+    grouped_headings, section_links = parse_headings_and_group('master.md')
+    md_sections = create_md_content_from_headings('master.md', grouped_headings, section_links)
 
     for filename, md_content in md_sections:
         convert_md_to_html(md_content, filename, template_path)

@@ -1,4 +1,5 @@
-﻿# What are anti-wrinkle injections {1}
+﻿# What are anti-wrinkle injections
+
 Botulinum toxin injections are at the forefront of our treatment options for forehead lines:
 
 
@@ -107,6 +108,7 @@ Price: from £245
 
 # General dentistry {2}
 
+
 General dentistry is the cornerstone of dental health, encompassing a wide range of services aimed at maintaining and improving oral health. These services are essential for preventing dental issues, diagnosing problems early, and providing treatments that keep your teeth and gums healthy. Our goal is to ensure the longevity of your dental health and to enhance your overall well-being.
 Our general dentistry services include regular dental checkups, professional teeth cleaning, cavity fillings, root canals, gum disease treatment, and more. During each visit, we conduct a thorough examination of your mouth to assess the health of your teeth and gums. We also focus on preventive care, providing advice on good oral hygiene practices and addressing any lifestyle factors that might affect your dental health.
 Each appointment is designed to be comprehensive yet efficient, typically lasting about 30 minutes. We prioritize understanding your specific needs and concerns, tailoring our services to ensure the best outcomes for your oral health. Our team uses the latest dental techniques and technologies to provide high-quality, comfortable care.
@@ -174,3 +176,17 @@ Dr. Cousins holds memberships in several prestigious professional bodies, includ
 
 
 Her commitment to her profession is further demonstrated by her involvement in audits and continuous professional development, covering critical areas such as infection control, medical emergencies, and special patient groups. Dr. Cousins' blend of academic rigor, practical experience, and a passion for patient-centered care make her a distinguished figure in her field.
+
+
+________________
+
+# CONTACT US 
+
+# TERMS AND CONDITIONS
+
+# CANCELLATIONS
+
+
+
+
+
