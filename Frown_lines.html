@@ -45,10 +45,7 @@
 	    }
 	    
     h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h3 {
        text-align: left!important;
        font-family: 'Playfair Display', serif;
     }
@@ -60,6 +57,43 @@
     li {
         font-size:18px!important;;
     }
+    
+    .w3-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+	.main-content {
+		flex: 3; /* Takes more space */
+		padding: 10px;
+	}
+
+	.article-links {
+		flex: 1; /* Takes less space */
+		padding: 10px;
+	}
+
+	.article-links ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.article-links li a {
+		text-decoration: none;
+		color: blue;
+	}
+
+	/* Responsive for mobile screens */
+	@media (max-width: 600px) {
+		.w3-content {
+			flex-direction: column;
+		}
+		.article-links {
+			border-left: none;
+			border-top: 1px solid #ccc; /* Divider at top for mobile */
+		}
+	}
+
 
   </style>
 </head>
@@ -104,16 +138,34 @@
   </div>
   
   
-  <div class="w3-content w3-container w3-padding-large" >
+<div class="w3-content w3-container w3-padding-large">
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 id="frown-lines">Frown lines</h1>
+        <p>Frown lines, also known as glabellar lines, are the vertical lines that develop between the eyebrows as we age, becoming a key aesthetic concern for many. In our youth, these lines are dynamic, appearing primarily when we frown or concentrate. Over time, however, they can deepen into static lines, impacting not only our appearance but also how we perceive ourselves.</p>
+        <p>During your consultation, we will thoroughly assess these lines and explore all available treatment options. Often, carefully targeted injections of botulinum toxin into the muscles responsible for frowning can significantly alleviate these concerns. These injections reduce muscle activity, softening existing static lines and aiding in the prevention of further dynamic lines.</p>
+        <p>Your appointment will last approximately 30 minutes and will include a detailed facial assessment. We will discuss your aesthetic aspirations and, if suitable, proceed with the application of multiple small injections using ultra-fine needles for minimal discomfort.</p>
+        <p>We are committed to providing detailed information about how various treatments, particularly botulinum toxin injections, can specifically target your concerns. Our approach emphasizes informed decision-making. We will cover the potential risks and advantages of each treatment option, equipping you with all the information you need to make a confident and informed decision about your care.</p>
+        <p>Price: from £245</p>
+    </div>
 
-<h1 id="frown-lines">Frown lines</h1>
-<p>Frown lines, also known as glabellar lines, are the vertical lines that develop between the eyebrows as we age, becoming a key aesthetic concern for many. In our youth, these lines are dynamic, appearing primarily when we frown or concentrate. Over time, however, they can deepen into static lines, impacting not only our appearance but also how we perceive ourselves.</p>
-<p>During your consultation, we will thoroughly assess these lines and explore all available treatment options. Often, carefully targeted injections of botulinum toxin into the muscles responsible for frowning can significantly alleviate these concerns. These injections reduce muscle activity, softening existing static lines and aiding in the prevention of further dynamic lines.</p>
-<p>Your appointment will last approximately 30 minutes and will include a detailed facial assessment. We will discuss your aesthetic aspirations and, if suitable, proceed with the application of multiple small injections using ultra-fine needles for minimal discomfort.</p>
-<p>We are committed to providing detailed information about how various treatments, particularly botulinum toxin injections, can specifically target your concerns. Our approach emphasizes informed decision-making. We will cover the potential risks and advantages of each treatment option, equipping you with all the information you need to make a confident and informed decision about your care.</p>
-<p>Price: from £245</p>
+    <!-- Article Links -->
+    <div class="article-links w3-center">
+		<h4 style="text-align: center">ARTICLES</h4>
+        <!-- List of links -->
+        
+		<ul>
+						<li><a href="Forehead_lines.html">Forehead lines</a></li>
+						<li><a href="Frown_lines.html">Frown lines</a></li>
+						<li><a href="Jaw_tension.html">Jaw tension</a></li>
+						<li><a href="Gummy_smile.html">Gummy smile</a></li>
+						<li><a href="Axillary_hyperhydrosis.html">Axillary hyperhydrosis</a></li>
+					</ul>
+    </div>
+</div>
 
-  </div>
+  
+  
   <div id="book" w3-include-html="templates/footer.html"></div>
   <script src="js/main.js"></script>
 </body>

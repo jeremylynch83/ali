@@ -45,10 +45,7 @@
 	    }
 	    
     h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h3 {
        text-align: left!important;
        font-family: 'Playfair Display', serif;
     }
@@ -60,6 +57,43 @@
     li {
         font-size:18px!important;;
     }
+    
+    .w3-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+	.main-content {
+		flex: 3; /* Takes more space */
+		padding: 10px;
+	}
+
+	.article-links {
+		flex: 1; /* Takes less space */
+		padding: 10px;
+	}
+
+	.article-links ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.article-links li a {
+		text-decoration: none;
+		color: blue;
+	}
+
+	/* Responsive for mobile screens */
+	@media (max-width: 600px) {
+		.w3-content {
+			flex-direction: column;
+		}
+		.article-links {
+			border-left: none;
+			border-top: 1px solid #ccc; /* Divider at top for mobile */
+		}
+	}
+
 
   </style>
 </head>
@@ -104,11 +138,27 @@
   </div>
   
   
-  <div class="w3-content w3-container w3-padding-large" >
+<div class="w3-content w3-container w3-padding-large">
+    <!-- Main Content -->
+    <div class="main-content">
+        $body$
+    </div>
 
-$body$
+    <!-- Article Links -->
+    <div class="article-links w3-center">
+		<h4 style="text-align: center">ARTICLES</h4>
+        <!-- List of links -->
+        
+		<ul>
+			$for(links)$
+			<li><a href="$links.url$">$links.text$</a></li>
+			$endfor$
+		</ul>
+    </div>
+</div>
 
-  </div>
+  
+  
   <div id="book" w3-include-html="templates/footer.html"></div>
   <script src="js/main.js"></script>
 </body>

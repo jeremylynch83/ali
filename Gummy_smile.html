@@ -45,10 +45,7 @@
 	    }
 	    
     h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h3 {
        text-align: left!important;
        font-family: 'Playfair Display', serif;
     }
@@ -60,6 +57,43 @@
     li {
         font-size:18px!important;;
     }
+    
+    .w3-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+	.main-content {
+		flex: 3; /* Takes more space */
+		padding: 10px;
+	}
+
+	.article-links {
+		flex: 1; /* Takes less space */
+		padding: 10px;
+	}
+
+	.article-links ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.article-links li a {
+		text-decoration: none;
+		color: blue;
+	}
+
+	/* Responsive for mobile screens */
+	@media (max-width: 600px) {
+		.w3-content {
+			flex-direction: column;
+		}
+		.article-links {
+			border-left: none;
+			border-top: 1px solid #ccc; /* Divider at top for mobile */
+		}
+	}
+
 
   </style>
 </head>
@@ -104,16 +138,34 @@
   </div>
   
   
-  <div class="w3-content w3-container w3-padding-large" >
+<div class="w3-content w3-container w3-padding-large">
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 id="gummy-smile">Gummy smile</h1>
+        <p>A gummy smile, characterized by excessive visibility of the gums when smiling, is an aesthetic concern for many individuals. This condition, often a result of the way muscles in the upper lip and face interact, can impact self-confidence and the way one feels about their smile.</p>
+        <p>In your consultation, we will carefully assess your smile and discuss all treatment options. A common and effective approach to addressing a gummy smile involves small, precisely targeted injections of botulinum toxin into the muscles that control the upper lip. These injections help to relax the muscle, reducing the elevation of the lip when smiling and thereby minimizing the exposure of the gums.</p>
+        <p>The appointment will last about 30 minutes, including a thorough facial assessment and a discussion with you to understand your aesthetic goals. If appropriate, we will proceed with administering several tiny injections using the finest available needles to ensure comfort and precision.</p>
+        <p>We are dedicated to providing detailed information about the range of treatments available, with a special focus on botulinum toxin injections for addressing specific concerns like a gummy smile. Our commitment is to informed decision-making. We will cover the potential risks and benefits of each treatment option, equipping you with all the information necessary to make a confident and informed decision about your treatment.</p>
+        <p>Price: from £245</p>
+    </div>
 
-<h1 id="gummy-smile">Gummy smile</h1>
-<p>A gummy smile, characterized by excessive visibility of the gums when smiling, is an aesthetic concern for many individuals. This condition, often a result of the way muscles in the upper lip and face interact, can impact self-confidence and the way one feels about their smile.</p>
-<p>In your consultation, we will carefully assess your smile and discuss all treatment options. A common and effective approach to addressing a gummy smile involves small, precisely targeted injections of botulinum toxin into the muscles that control the upper lip. These injections help to relax the muscle, reducing the elevation of the lip when smiling and thereby minimizing the exposure of the gums.</p>
-<p>The appointment will last about 30 minutes, including a thorough facial assessment and a discussion with you to understand your aesthetic goals. If appropriate, we will proceed with administering several tiny injections using the finest available needles to ensure comfort and precision.</p>
-<p>We are dedicated to providing detailed information about the range of treatments available, with a special focus on botulinum toxin injections for addressing specific concerns like a gummy smile. Our commitment is to informed decision-making. We will cover the potential risks and benefits of each treatment option, equipping you with all the information necessary to make a confident and informed decision about your treatment.</p>
-<p>Price: from £245</p>
+    <!-- Article Links -->
+    <div class="article-links w3-center">
+		<h4 style="text-align: center">ARTICLES</h4>
+        <!-- List of links -->
+        
+		<ul>
+						<li><a href="Forehead_lines.html">Forehead lines</a></li>
+						<li><a href="Frown_lines.html">Frown lines</a></li>
+						<li><a href="Jaw_tension.html">Jaw tension</a></li>
+						<li><a href="Gummy_smile.html">Gummy smile</a></li>
+						<li><a href="Axillary_hyperhydrosis.html">Axillary hyperhydrosis</a></li>
+					</ul>
+    </div>
+</div>
 
-  </div>
+  
+  
   <div id="book" w3-include-html="templates/footer.html"></div>
   <script src="js/main.js"></script>
 </body>

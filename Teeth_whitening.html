@@ -45,10 +45,7 @@
 	    }
 	    
     h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h3 {
        text-align: left!important;
        font-family: 'Playfair Display', serif;
     }
@@ -60,6 +57,43 @@
     li {
         font-size:18px!important;;
     }
+    
+    .w3-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+	.main-content {
+		flex: 3; /* Takes more space */
+		padding: 10px;
+	}
+
+	.article-links {
+		flex: 1; /* Takes less space */
+		padding: 10px;
+	}
+
+	.article-links ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.article-links li a {
+		text-decoration: none;
+		color: blue;
+	}
+
+	/* Responsive for mobile screens */
+	@media (max-width: 600px) {
+		.w3-content {
+			flex-direction: column;
+		}
+		.article-links {
+			border-left: none;
+			border-top: 1px solid #ccc; /* Divider at top for mobile */
+		}
+	}
+
 
   </style>
 </head>
@@ -104,16 +138,35 @@
   </div>
   
   
-  <div class="w3-content w3-container w3-padding-large" >
+<div class="w3-content w3-container w3-padding-large">
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 id="teeth-whitening">Teeth whitening</h1>
+        <p>Teeth whitening is a popular cosmetic dental treatment that revitalizes and enhances the brightness of your smile. Over time, teeth can become discolored or stained due to factors like diet, smoking, and the natural aging process. This can affect not only your appearance but also your self-confidence and the way you interact with others.</p>
+        <p>During your consultation, we will assess the condition of your teeth and discuss all available whitening options. Our clinic offers professional teeth whitening treatments, which are more effective and safer than over-the-counter products. We use high-quality whitening agents that are applied to the teeth, breaking down stains and discoloration, resulting in a noticeably brighter smile.</p>
+        <p>Your appointment will take approximately 30 minutes and involves a thorough dental assessment. We will discuss your aesthetic goals and, if appropriate, proceed with a customized teeth whitening treatment tailored to your specific needs.</p>
+        <p>We provide comprehensive information about our teeth whitening treatments, ensuring you understand the process and expected results. We believe in informed decision-making and will discuss potential risks and benefits, helping you make a confident choice about improving your smile.</p>
+        <p>Price: from £245</p>
+    </div>
 
-<h1 id="teeth-whitening">Teeth whitening</h1>
-<p>Teeth whitening is a popular cosmetic dental treatment that revitalizes and enhances the brightness of your smile. Over time, teeth can become discolored or stained due to factors like diet, smoking, and the natural aging process. This can affect not only your appearance but also your self-confidence and the way you interact with others.</p>
-<p>During your consultation, we will assess the condition of your teeth and discuss all available whitening options. Our clinic offers professional teeth whitening treatments, which are more effective and safer than over-the-counter products. We use high-quality whitening agents that are applied to the teeth, breaking down stains and discoloration, resulting in a noticeably brighter smile.</p>
-<p>Your appointment will take approximately 30 minutes and involves a thorough dental assessment. We will discuss your aesthetic goals and, if appropriate, proceed with a customized teeth whitening treatment tailored to your specific needs.</p>
-<p>We provide comprehensive information about our teeth whitening treatments, ensuring you understand the process and expected results. We believe in informed decision-making and will discuss potential risks and benefits, helping you make a confident choice about improving your smile.</p>
-<p>Price: from £245</p>
+    <!-- Article Links -->
+    <div class="article-links w3-center">
+		<h4 style="text-align: center">ARTICLES</h4>
+        <!-- List of links -->
+        
+		<ul>
+						<li><a href="Teeth_whitening.html">Teeth whitening</a></li>
+						<li><a href="Composite_bonding.html">Composite bonding</a></li>
+						<li><a href="Veneers.html">Veneers</a></li>
+						<li><a href="Checkup.html">Checkup</a></li>
+						<li><a href="General_dentistry.html">General dentistry</a></li>
+						<li><a href="Crowns.html">Crowns</a></li>
+					</ul>
+    </div>
+</div>
 
-  </div>
+  
+  
   <div id="book" w3-include-html="templates/footer.html"></div>
   <script src="js/main.js"></script>
 </body>

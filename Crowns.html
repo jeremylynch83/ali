@@ -45,10 +45,7 @@
 	    }
 	    
     h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h3 {
        text-align: left!important;
        font-family: 'Playfair Display', serif;
     }
@@ -60,6 +57,43 @@
     li {
         font-size:18px!important;;
     }
+    
+    .w3-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+	.main-content {
+		flex: 3; /* Takes more space */
+		padding: 10px;
+	}
+
+	.article-links {
+		flex: 1; /* Takes less space */
+		padding: 10px;
+	}
+
+	.article-links ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.article-links li a {
+		text-decoration: none;
+		color: blue;
+	}
+
+	/* Responsive for mobile screens */
+	@media (max-width: 600px) {
+		.w3-content {
+			flex-direction: column;
+		}
+		.article-links {
+			border-left: none;
+			border-top: 1px solid #ccc; /* Divider at top for mobile */
+		}
+	}
+
 
   </style>
 </head>
@@ -104,16 +138,35 @@
   </div>
   
   
-  <div class="w3-content w3-container w3-padding-large" >
+<div class="w3-content w3-container w3-padding-large">
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 id="crowns">Crowns</h1>
+        <p>Dental crowns are a key treatment in restorative dentistry, designed to protect, cover, and restore the shape of your teeth when fillings don’t solve the problem. Crowns can be used for a variety of purposes: from repairing a damaged tooth to improving the overall appearance of your smile. They are custom-made to fit over the entire tooth, starting at the gum line, and are typically made of durable materials like porcelain, ceramic, or metal alloys.</p>
+        <p>During your consultation, we will assess the condition of your teeth to determine if a crown is the right option for you. This could be the case for a tooth that is fractured, severely decayed, or has a large filling. We will also consider crowns for cosmetic enhancement, to cover discolored or poorly shaped teeth.</p>
+        <p>The process of getting a crown usually requires two appointments. The first appointment involves preparing the tooth, taking impressions for the custom crown, and placing a temporary crown. In the second visit, the permanent crown is fitted and adjusted for comfort and function.</p>
+        <p>We provide detailed information about the procedure, materials used, and care for your dental crowns. Our approach is to ensure that you are fully informed and comfortable with the treatment plan. We discuss all aspects of the procedure, including potential risks and benefits, so you can make a confident and informed decision about your dental care.</p>
+        <p>Price: from £245</p>
+    </div>
 
-<h1 id="crowns">Crowns</h1>
-<p>Dental crowns are a key treatment in restorative dentistry, designed to protect, cover, and restore the shape of your teeth when fillings don’t solve the problem. Crowns can be used for a variety of purposes: from repairing a damaged tooth to improving the overall appearance of your smile. They are custom-made to fit over the entire tooth, starting at the gum line, and are typically made of durable materials like porcelain, ceramic, or metal alloys.</p>
-<p>During your consultation, we will assess the condition of your teeth to determine if a crown is the right option for you. This could be the case for a tooth that is fractured, severely decayed, or has a large filling. We will also consider crowns for cosmetic enhancement, to cover discolored or poorly shaped teeth.</p>
-<p>The process of getting a crown usually requires two appointments. The first appointment involves preparing the tooth, taking impressions for the custom crown, and placing a temporary crown. In the second visit, the permanent crown is fitted and adjusted for comfort and function.</p>
-<p>We provide detailed information about the procedure, materials used, and care for your dental crowns. Our approach is to ensure that you are fully informed and comfortable with the treatment plan. We discuss all aspects of the procedure, including potential risks and benefits, so you can make a confident and informed decision about your dental care.</p>
-<p>Price: from £245</p>
+    <!-- Article Links -->
+    <div class="article-links w3-center">
+		<h4 style="text-align: center">ARTICLES</h4>
+        <!-- List of links -->
+        
+		<ul>
+						<li><a href="Teeth_whitening.html">Teeth whitening</a></li>
+						<li><a href="Composite_bonding.html">Composite bonding</a></li>
+						<li><a href="Veneers.html">Veneers</a></li>
+						<li><a href="Checkup.html">Checkup</a></li>
+						<li><a href="General_dentistry.html">General dentistry</a></li>
+						<li><a href="Crowns.html">Crowns</a></li>
+					</ul>
+    </div>
+</div>
 
-  </div>
+  
+  
   <div id="book" w3-include-html="templates/footer.html"></div>
   <script src="js/main.js"></script>
 </body>

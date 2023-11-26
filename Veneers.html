@@ -45,10 +45,7 @@
 	    }
 	    
     h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h3 {
        text-align: left!important;
        font-family: 'Playfair Display', serif;
     }
@@ -60,6 +57,43 @@
     li {
         font-size:18px!important;;
     }
+    
+    .w3-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+	.main-content {
+		flex: 3; /* Takes more space */
+		padding: 10px;
+	}
+
+	.article-links {
+		flex: 1; /* Takes less space */
+		padding: 10px;
+	}
+
+	.article-links ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.article-links li a {
+		text-decoration: none;
+		color: blue;
+	}
+
+	/* Responsive for mobile screens */
+	@media (max-width: 600px) {
+		.w3-content {
+			flex-direction: column;
+		}
+		.article-links {
+			border-left: none;
+			border-top: 1px solid #ccc; /* Divider at top for mobile */
+		}
+	}
+
 
   </style>
 </head>
@@ -104,16 +138,35 @@
   </div>
   
   
-  <div class="w3-content w3-container w3-padding-large" >
+<div class="w3-content w3-container w3-padding-large">
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 id="veneers">Veneers</h1>
+        <p>Veneers are a highly effective dental treatment for transforming your smile, offering a solution for various aesthetic concerns such as discoloration, chips, gaps, or uneven teeth. These thin, custom-made shells, typically crafted from porcelain or composite material, are designed to cover the front surface of teeth, enhancing their appearance and providing a more uniform look.</p>
+        <p>During your consultation, we will conduct a thorough assessment of your teeth and discuss the veneer process in detail. This treatment is ideal for those seeking a significant improvement in their smile’s appearance, as veneers can drastically change the color, shape, size, or length of teeth.</p>
+        <p>Your appointment will take approximately 30 minutes and involves a comprehensive dental evaluation. We will work closely with you to understand your aesthetic goals and determine if veneers are the best option to achieve your desired outcome.</p>
+        <p>We provide extensive information about veneers and other dental treatments to ensure you make an informed decision. We will explore all aspects of the veneer process, including potential risks and benefits, to help you feel confident and informed about your choice of treatment.</p>
+        <p>Price: from £245</p>
+    </div>
 
-<h1 id="veneers">Veneers</h1>
-<p>Veneers are a highly effective dental treatment for transforming your smile, offering a solution for various aesthetic concerns such as discoloration, chips, gaps, or uneven teeth. These thin, custom-made shells, typically crafted from porcelain or composite material, are designed to cover the front surface of teeth, enhancing their appearance and providing a more uniform look.</p>
-<p>During your consultation, we will conduct a thorough assessment of your teeth and discuss the veneer process in detail. This treatment is ideal for those seeking a significant improvement in their smile’s appearance, as veneers can drastically change the color, shape, size, or length of teeth.</p>
-<p>Your appointment will take approximately 30 minutes and involves a comprehensive dental evaluation. We will work closely with you to understand your aesthetic goals and determine if veneers are the best option to achieve your desired outcome.</p>
-<p>We provide extensive information about veneers and other dental treatments to ensure you make an informed decision. We will explore all aspects of the veneer process, including potential risks and benefits, to help you feel confident and informed about your choice of treatment.</p>
-<p>Price: from £245</p>
+    <!-- Article Links -->
+    <div class="article-links w3-center">
+		<h4 style="text-align: center">ARTICLES</h4>
+        <!-- List of links -->
+        
+		<ul>
+						<li><a href="Teeth_whitening.html">Teeth whitening</a></li>
+						<li><a href="Composite_bonding.html">Composite bonding</a></li>
+						<li><a href="Veneers.html">Veneers</a></li>
+						<li><a href="Checkup.html">Checkup</a></li>
+						<li><a href="General_dentistry.html">General dentistry</a></li>
+						<li><a href="Crowns.html">Crowns</a></li>
+					</ul>
+    </div>
+</div>
 
-  </div>
+  
+  
   <div id="book" w3-include-html="templates/footer.html"></div>
   <script src="js/main.js"></script>
 </body>

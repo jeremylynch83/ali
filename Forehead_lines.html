@@ -45,10 +45,7 @@
 	    }
 	    
     h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h3 {
        text-align: left!important;
        font-family: 'Playfair Display', serif;
     }
@@ -60,6 +57,43 @@
     li {
         font-size:18px!important;;
     }
+    
+    .w3-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+	.main-content {
+		flex: 3; /* Takes more space */
+		padding: 10px;
+	}
+
+	.article-links {
+		flex: 1; /* Takes less space */
+		padding: 10px;
+	}
+
+	.article-links ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.article-links li a {
+		text-decoration: none;
+		color: blue;
+	}
+
+	/* Responsive for mobile screens */
+	@media (max-width: 600px) {
+		.w3-content {
+			flex-direction: column;
+		}
+		.article-links {
+			border-left: none;
+			border-top: 1px solid #ccc; /* Divider at top for mobile */
+		}
+	}
+
 
   </style>
 </head>
@@ -104,16 +138,34 @@
   </div>
   
   
-  <div class="w3-content w3-container w3-padding-large" >
+<div class="w3-content w3-container w3-padding-large">
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 id="forehead-lines">Forehead lines</h1>
+        <p>Forehead lines are the horizontal lines that develop over time as we age and are a common aesthetic concern. When we are younger they appear when we raise our eyebrows (dynamic lines) but can deepen over time and become more permanent (static lines) affecting our appearance but more importantly how we feel about ourselves.</p>
+        <p>We will assess these lines and cover all treatment options during your consultation. Often, small and precisely targetted injections of botulinum toxin into the frontalis muscle (the muscle of the forehead which is responsible for raising the eyebrows, contributing to these lines) will address these concerns. The injections reduce the activity of this muscle, softening static lines and helping to prevent dynamic lines.</p>
+        <p>This appointment will take approximately 30 minutes and involves facial assessment and discussion with you to understand your aesthetic goals and if appropriate, injection of multiple tiny injections using the smallest needles available.</p>
+        <p>We provide comprehensive information on how various treatments, especially botulinum toxin injections, can effectively address your specific concerns. We believe in informed decision-making. We will discuss the potential risks and benefits associated with each treatment option, ensuring you have all the necessary information to make a confident choice.</p>
+        <p>Price: from £245</p>
+    </div>
 
-<h1 id="forehead-lines">Forehead lines</h1>
-<p>Forehead lines are the horizontal lines that develop over time as we age and are a common aesthetic concern. When we are younger they appear when we raise our eyebrows (dynamic lines) but can deepen over time and become more permanent (static lines) affecting our appearance but more importantly how we feel about ourselves.</p>
-<p>We will assess these lines and cover all treatment options during your consultation. Often, small and precisely targetted injections of botulinum toxin into the frontalis muscle (the muscle of the forehead which is responsible for raising the eyebrows, contributing to these lines) will address these concerns. The injections reduce the activity of this muscle, softening static lines and helping to prevent dynamic lines.</p>
-<p>This appointment will take approximately 30 minutes and involves facial assessment and discussion with you to understand your aesthetic goals and if appropriate, injection of multiple tiny injections using the smallest needles available.</p>
-<p>We provide comprehensive information on how various treatments, especially botulinum toxin injections, can effectively address your specific concerns. We believe in informed decision-making. We will discuss the potential risks and benefits associated with each treatment option, ensuring you have all the necessary information to make a confident choice.</p>
-<p>Price: from £245</p>
+    <!-- Article Links -->
+    <div class="article-links w3-center">
+		<h4 style="text-align: center">ARTICLES</h4>
+        <!-- List of links -->
+        
+		<ul>
+						<li><a href="Forehead_lines.html">Forehead lines</a></li>
+						<li><a href="Frown_lines.html">Frown lines</a></li>
+						<li><a href="Jaw_tension.html">Jaw tension</a></li>
+						<li><a href="Gummy_smile.html">Gummy smile</a></li>
+						<li><a href="Axillary_hyperhydrosis.html">Axillary hyperhydrosis</a></li>
+					</ul>
+    </div>
+</div>
 
-  </div>
+  
+  
   <div id="book" w3-include-html="templates/footer.html"></div>
   <script src="js/main.js"></script>
 </body>

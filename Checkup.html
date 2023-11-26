@@ -45,10 +45,7 @@
 	    }
 	    
     h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h3 {
        text-align: left!important;
        font-family: 'Playfair Display', serif;
     }
@@ -60,6 +57,43 @@
     li {
         font-size:18px!important;;
     }
+    
+    .w3-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+	.main-content {
+		flex: 3; /* Takes more space */
+		padding: 10px;
+	}
+
+	.article-links {
+		flex: 1; /* Takes less space */
+		padding: 10px;
+	}
+
+	.article-links ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.article-links li a {
+		text-decoration: none;
+		color: blue;
+	}
+
+	/* Responsive for mobile screens */
+	@media (max-width: 600px) {
+		.w3-content {
+			flex-direction: column;
+		}
+		.article-links {
+			border-left: none;
+			border-top: 1px solid #ccc; /* Divider at top for mobile */
+		}
+	}
+
 
   </style>
 </head>
@@ -104,16 +138,35 @@
   </div>
   
   
-  <div class="w3-content w3-container w3-padding-large" >
+<div class="w3-content w3-container w3-padding-large">
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 id="checkup">Checkup</h1>
+        <p>A dental checkup is an essential part of maintaining oral health and hygiene. It involves a thorough examination of your teeth, gums, and mouth to detect any potential issues such as cavities, gum disease, or other dental problems. Regular checkups are crucial as they allow for early detection and treatment of oral health issues, which can be vital in preventing more serious complications.</p>
+        <p>During your dental checkup appointment, we will conduct a comprehensive examination of your oral health. This includes assessing the health of your teeth and gums, checking for signs of decay or gum disease, and evaluating your bite and jaw for any issues. We may also perform a professional cleaning to remove any plaque or tartar build-up, which is essential for preventing tooth decay and gum disease.</p>
+        <p>The appointment typically lasts around 30 minutes and includes a discussion with you to understand any concerns you may have and to provide guidance on maintaining optimal oral health. Our goal is to ensure your dental well-being and to help you achieve a healthy, confident smile.</p>
+        <p>We provide detailed information on maintaining oral health and the importance of regular dental checkups. We believe in empowering our patients with knowledge, enabling informed decision-making about their dental care. We will discuss any findings and provide recommendations for any necessary treatments or preventive measures.</p>
+        <p>Price: from £245</p>
+    </div>
 
-<h1 id="checkup">Checkup</h1>
-<p>A dental checkup is an essential part of maintaining oral health and hygiene. It involves a thorough examination of your teeth, gums, and mouth to detect any potential issues such as cavities, gum disease, or other dental problems. Regular checkups are crucial as they allow for early detection and treatment of oral health issues, which can be vital in preventing more serious complications.</p>
-<p>During your dental checkup appointment, we will conduct a comprehensive examination of your oral health. This includes assessing the health of your teeth and gums, checking for signs of decay or gum disease, and evaluating your bite and jaw for any issues. We may also perform a professional cleaning to remove any plaque or tartar build-up, which is essential for preventing tooth decay and gum disease.</p>
-<p>The appointment typically lasts around 30 minutes and includes a discussion with you to understand any concerns you may have and to provide guidance on maintaining optimal oral health. Our goal is to ensure your dental well-being and to help you achieve a healthy, confident smile.</p>
-<p>We provide detailed information on maintaining oral health and the importance of regular dental checkups. We believe in empowering our patients with knowledge, enabling informed decision-making about their dental care. We will discuss any findings and provide recommendations for any necessary treatments or preventive measures.</p>
-<p>Price: from £245</p>
+    <!-- Article Links -->
+    <div class="article-links w3-center">
+		<h4 style="text-align: center">ARTICLES</h4>
+        <!-- List of links -->
+        
+		<ul>
+						<li><a href="Teeth_whitening.html">Teeth whitening</a></li>
+						<li><a href="Composite_bonding.html">Composite bonding</a></li>
+						<li><a href="Veneers.html">Veneers</a></li>
+						<li><a href="Checkup.html">Checkup</a></li>
+						<li><a href="General_dentistry.html">General dentistry</a></li>
+						<li><a href="Crowns.html">Crowns</a></li>
+					</ul>
+    </div>
+</div>
 
-  </div>
+  
+  
   <div id="book" w3-include-html="templates/footer.html"></div>
   <script src="js/main.js"></script>
 </body>

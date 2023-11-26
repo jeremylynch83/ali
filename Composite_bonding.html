@@ -45,10 +45,7 @@
 	    }
 	    
     h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h3 {
        text-align: left!important;
        font-family: 'Playfair Display', serif;
     }
@@ -60,6 +57,43 @@
     li {
         font-size:18px!important;;
     }
+    
+    .w3-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+	.main-content {
+		flex: 3; /* Takes more space */
+		padding: 10px;
+	}
+
+	.article-links {
+		flex: 1; /* Takes less space */
+		padding: 10px;
+	}
+
+	.article-links ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.article-links li a {
+		text-decoration: none;
+		color: blue;
+	}
+
+	/* Responsive for mobile screens */
+	@media (max-width: 600px) {
+		.w3-content {
+			flex-direction: column;
+		}
+		.article-links {
+			border-left: none;
+			border-top: 1px solid #ccc; /* Divider at top for mobile */
+		}
+	}
+
 
   </style>
 </head>
@@ -104,16 +138,35 @@
   </div>
   
   
-  <div class="w3-content w3-container w3-padding-large" >
+<div class="w3-content w3-container w3-padding-large">
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 id="composite-bonding">Composite bonding</h1>
+        <p>Composite bonding is a versatile dental treatment that enhances the appearance of your teeth, addressing issues such as chipping, discoloration, gaps, and minor misalignments. This technique involves the application of a tooth-colored composite resin to the teeth, which is then shaped and polished to improve overall aesthetics. It’s a popular choice for those looking to make subtle but impactful changes to their smile without the need for more invasive procedures.</p>
+        <p>During your consultation, we will assess your dental needs and discuss the composite bonding process in detail. Our goal is to understand your aesthetic objectives and determine if composite bonding is the most suitable treatment for you. This procedure is often chosen for its ability to provide immediate and noticeable improvements with minimal tooth alteration.</p>
+        <p>Your appointment will take about 30 minutes and includes a comprehensive dental examination. We will discuss the specifics of the composite bonding process, ensuring that the treatment aligns with your expectations and desired outcomes.</p>
+        <p>We are committed to providing thorough information about composite bonding and other dental treatments. Our approach prioritizes informed decision-making, and we will discuss the potential risks and benefits to ensure you are fully informed and confident in your treatment choice.</p>
+        <p>Price: from £245</p>
+    </div>
 
-<h1 id="composite-bonding">Composite bonding</h1>
-<p>Composite bonding is a versatile dental treatment that enhances the appearance of your teeth, addressing issues such as chipping, discoloration, gaps, and minor misalignments. This technique involves the application of a tooth-colored composite resin to the teeth, which is then shaped and polished to improve overall aesthetics. It’s a popular choice for those looking to make subtle but impactful changes to their smile without the need for more invasive procedures.</p>
-<p>During your consultation, we will assess your dental needs and discuss the composite bonding process in detail. Our goal is to understand your aesthetic objectives and determine if composite bonding is the most suitable treatment for you. This procedure is often chosen for its ability to provide immediate and noticeable improvements with minimal tooth alteration.</p>
-<p>Your appointment will take about 30 minutes and includes a comprehensive dental examination. We will discuss the specifics of the composite bonding process, ensuring that the treatment aligns with your expectations and desired outcomes.</p>
-<p>We are committed to providing thorough information about composite bonding and other dental treatments. Our approach prioritizes informed decision-making, and we will discuss the potential risks and benefits to ensure you are fully informed and confident in your treatment choice.</p>
-<p>Price: from £245</p>
+    <!-- Article Links -->
+    <div class="article-links w3-center">
+		<h4 style="text-align: center">ARTICLES</h4>
+        <!-- List of links -->
+        
+		<ul>
+						<li><a href="Teeth_whitening.html">Teeth whitening</a></li>
+						<li><a href="Composite_bonding.html">Composite bonding</a></li>
+						<li><a href="Veneers.html">Veneers</a></li>
+						<li><a href="Checkup.html">Checkup</a></li>
+						<li><a href="General_dentistry.html">General dentistry</a></li>
+						<li><a href="Crowns.html">Crowns</a></li>
+					</ul>
+    </div>
+</div>
 
-  </div>
+  
+  
   <div id="book" w3-include-html="templates/footer.html"></div>
   <script src="js/main.js"></script>
 </body>
